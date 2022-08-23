@@ -10496,6 +10496,14 @@ h5.card-title, .card-title.h5 {
   padding: 0.375rem 0.75rem;
 }
 
+p.card-img--float {
+  background-color: white;
+  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+}
+
 .card-img--float {
   float: right;
 }
