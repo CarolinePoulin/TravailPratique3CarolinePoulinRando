@@ -1,0 +1,41 @@
+@use 'variables';
+
+.modal-body-img {
+    max-width: 150px;
+    display: block;
+}
+
+.col-4 {
+    padding: 10px;
+}
+
+h5.card-title {
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.nourriture .row {
+    width: 100%;
+    border-radius: 0.25rem;
+    border: 5px solid variables.$colorbleufonce;
+    background-color: variables.$colorbleuclair;
+    margin: 50px 0;
+    .nourriture--col {
+        width: 100%;
+        border-radius: 0.25rem;
+        border: 5px solid variables.$colorbleufonce;
+        background-color: variables.$colorgrispale;
+        padding: 10px;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+.deshydrater {
+    margin-bottom: 40px;
+
+    .iframe {
+        text-align: center;
+    }
+}
+

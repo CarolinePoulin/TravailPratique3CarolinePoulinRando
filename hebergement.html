@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('service-worker.js')
+                    .then((reg) => {
+                        console.log('Notre service worker est chargé !', reg);
+                    });
+                });
+            }
+        </script>
+        <title>TP3_POULINCAROLINE</title>
+    </head>
+<body>
+    <a class="screen-reader-text" href="#content">Aller au contenu principal</a>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid navbar--div">
+                <a class="navbar-brand" href="index.html" tabindex="0"><img src="img/icons/randologo70px-modified.png" alt="logo"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html" role="tab" tabindex="0">Accueil</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" tabindex="0" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Endroits</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="endroits.html#chaudiereAppalaches">Chaudière-Appalaches</a></li>
+                                <li><a class="dropdown-item" href="endroits.html#montagneBeauce">Montagne en Beauce</a></li>
+                                <li><a class="dropdown-item" href="endroits.html#toutou">Ou aller avec Toutou</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" tabindex="0" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">A Savoir</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="asavoir.html#savoir">Choses à savoir</a></li>
+                                <li><a class="dropdown-item" href="asavoir.html#nourriture">Nourriture</a></li>
+                                <li><a class="dropdown-item" href="asavoir.html#deshydrater">Déshydratation</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" tabindex="0" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hébergement</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="hebergement.html#ouDormir">Où Dormir</a></li>
+                                <li><a class="dropdown-item" href="hebergement.html#auChaud">Rester au chaud</a></li>
+                                <li><a class="dropdown-item" href="hebergement.html#application">Applications utiles</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="enregistrer.html" role="tab" tabindex="0">S'enregistrer</a></li>
+                        <li class="nav-item"><button id="butInstall" aria-label="Install" hidden>Installer la PWA</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="ouDormir" class="container first hebergement">
+            <h1>Les différents hébergement en randonnée</h1>
+            <div class="row hebergement--row">
+                <div class="col-6">
+                    <h2>Pourquoi faire du camping en hamac ?</h2>
+                    <p>Si vous avez déjà passé une journée à la plage ou profité d'un séjour à la campagne, vous êtes certainement familier avec les hamacs. Ceux-ci sont incontournables lorsqu'il s'agit de décompresser et de tuer le temps. Leur doux et rythmique ballant a quelque chose d'hypnotique, tandis que l'élévation vous donne une impression d'apesanteur. Saviez-vous que les hamacs font aussi d'excellents systèmes de couchage en camping ?</p>
+                    <p>GUIDE 101 DU CAMPING EN HAMAC 
+                        <br> 1- <a href="https://altitude-blog.com/fr/comment-dormir-hamac-camping/#why">Pourquoi faire du camping en hamac?</a>
+                        <br> 2- <a href="https://altitude-blog.com/fr/comment-dormir-hamac-camping/#advantages">Avantages par rapport aux tentes</a>
+                        <br> 3- <a href="https://altitude-blog.com/fr/comment-dormir-hamac-camping/#disadvantages">Désavantages par rapport aux tentes</a>
+                        <br> 4- <a href="https://altitude-blog.com/fr/comment-dormir-hamac-camping/#equipment">Équipement nécessaire</a>
+                        <br> 5- <a href="https://altitude-blog.com/fr/comment-dormir-hamac-camping/#how">Comment s’installer</a>
+                        <br> 6- <a href="https://altitude-blog.com/fr/comment-dormir-hamac-camping/#tips">Trucs pour une première sortie</a>
+                        <br> 7- <a href="https://altitude-blog.com/fr/comment-dormir-hamac-camping/#alternatives">Autres alternatives à essayer</a></p>
+                </div>
+                <div class="col-6">
+                    <p class="hebergement--img"><img src="img/hamac.jpg"></p>
+                </div>
+            </div>
+
+            <div class="row hebergement--row">
+                <div class="col-6">
+                    <h2>Dormir en tente une expérience particulière</h2>
+                    <p>Directement en contact avec la nature, cela me ressource d’une manière extra-ordinaire. Je m’endors avec les bruits de la nature, le souffle du vent contre la toile, le chant des oiseaux, le sifflement des chouettes, le grincement des arbres, …</p>
+                    <p>Les liens utiles
+                    <br><a href="https://www.espaces.ca/articles/hebergement/camping/2391-10-sites-ou-camper-gratuitement-au-quebec">Les 10 sites</a> de campings gratuits au Québec
+                    <br><a href="https://laws-lois.justice.gc.ca/fra/reglements/DORS-80-127/TexteComplet.html">Règlement</a> camping sauvage Canada
+                    <br><a href="https://www.quebecmaritime.ca/ou-dormir/camping">Campings</a> du Québec
+                    <br><a href="https://www.pc.gc.ca/fr/index">Le site officiel</a> Parcs Canada
+                    <br><a href="https://www.campingquebec.com/fr/">Guide du camping</a> au Québec</p>
+                </div>
+                <div class="col-6">
+                    <p class="hebergement--img"><img src="img/tente1.jpg"></p>
+                </div>
+            </div>
+
+            <div class="row hebergement--row">
+                <div class="col-6">
+                    <h2>Refuge ou chalet</h2>
+                    <p>Les adeptes de longue randonnée hivernale connaissent bien les refuges. Mais les nouveaux initiés à la recherche de belles conditions d’enneigement qui sont moins expérimentés apprécieront aussi ces abris pour passer la nuit qui sont situés près des sentiers.
+                    <p>Refuge $$
+                        <br>On y trouve lits, table et poêle à bois. Des toilettes sèches sont situées à l’extérieur. L'équipement fourni peut varier d'un refuge à l'autre ainsi que selon la saison.
+                        <br>Vous pouvez réserver une ou plusieurs places pour dormir et, selon la capacité du refuge, d'autres personnes pourraient s’ajouter. En journée, les skieurs et randonneurs s’y arrêtent aussi fréquemment pour une pause.</p>
+                    <p>Chalet $$$
+                        <br>Toutes les commodités : éclairage, cuisinière, réfrigérateur, toilettes, eau chaude et douche, foyer ou poêle à bois, ainsi que l'équipement requis pour la préparation et le service des repas. Consultez la fiche technique du chalet lors de la réservation.
+                        <br>Table de pique-nique
+                        <br>Barbecue
+                        <br>Trou à feu</p>
+                </div>
+                <div class="col-6">
+                    <p class="hebergement--img"><img src="img/refugeChalet.jpg"></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="auChaud" class="container first sacCouchage--background">
+            <div class="sacCouchage--div">
+                <h1>17 trucs et astuces pour passer une nuit au chaud dans son sac de couchage</h1>
+                <p>Après une bonne journée de randonnée, une fois dans son sac de couchage, on ne rêve que d’une chose : une bonne nuit réparatrice au chaud. Pourtant, ça ne se passe pas toujours comme ça ! Qui n’a pas déjà eu une désagréable sensation de froid qui empêche de s’endormir ou réveille en pleine nuit ?</p>
+                <div class="row">
+                    <div class="col">
+                        <p>1 – Avoir un sac de couchage adapté<br>
+                            L’isolation de votre sac de couchage doit être adaptée aux conditions climatiques, c’est donc la première chose à considérer.                        
+                            La taille du sac de couchage est également importante, un sac de couchage trop petit sera compressé et n’isolera pas bien alors qu’un sac de couchage trop grand aura des points froids.
+                            <br>
+                            <br>2 – Déplier son sac de couchage le plus tôt possible<br>
+                            Il faut garder à l’esprit que c’est l’air emprisonné dans le garnissage (duvet ou fibres synthétiques) qui isole du froid.
+                            <br>
+                            <br>3 – S’isoler du froid du sol<br>
+                            Le moyen le plus classique de le faire est en utilisant un matelas, mais on peut aussi le faire en utilisant des moyens naturels en plus, comme en mettant des brindilles ou des fougères sous son abri ou en choisissant de planter sa tente sur de l’herbe épaisse et sèche plutôt que sur un sol minéral.
+                            <br>
+                            <br>4 – S’habiller correctement<br>
+                            S’habiller correctement ne veut pas dire empiler tous les vêtements que vous avez sous la main. Il faut privilégier les vêtements secs, respirants et respecter les 2 premières couches du système des 3 couches. Cela se traduit souvent par des sous-vêtements longs en synthétique ou en laine mérinos à même la peau et éventuellement une polaire ou équivalent par-dessus si ce n’est pas suffisant (haut et/ou bas). Attention à ne pas trop s’habiller au risque de transpirer dans vos vêtements et avoir froid par la suite.
+                            
+                            Je vous conseille également de mettre les vêtements que vous risquez utiliser dans la nuit directement dans votre sac de couchage. Ils seront tout chauds au moment de les enfiler et vous pourrez les enfiler à l’intérieur du sac – en faisant simplement quelques contorsions. 😉
+                            
+                            Note : n’hésitez pas à couvrir vos extrémités avec bonnet, chaussettes, gants… si les conditions le requièrent.
+                            <br>
+                            <br>5 – Utiliser un drap de sac<br>
+                            Tant que l’on parle d’isolation, sachez qu’il est possible d’utiliser un drap de sac à l’intérieur de son sac de couchage, de préférence en soie et non en coton pour gagner quelques degrés si nécessaire. Cela permet également de ne pas trop salir son sac de couchage et préserver ses performances.
+                            
+                            Il existe également des draps de sac thermiques qui font gagner plus que quelques degrés et permettent plus de polyvalence.
+                            <br>
+                            <br>6 – Se couvrir la tête<br>
+                            Vous savez sûrement qu’une grande partie de la chaleur corporelle est évacuée par la tête. Si vous avez froid, essayez de vous couvrir la tête avec un bonnet, la capuche de votre sac de couchage ou même un turban fabriqué avec un vêtement – le « gain de chaleur » est toujours surprenant.
+                            <br>
+                            <br>7 – Réchauffer ses pieds<br>
+                            Certaines personnes ont des difficultés pour dormir avec les pieds froids. Si vous êtes dans ce cas, vous le savez probablement. Dans ce cas, n’hésitez pas à dormir avec des chaussettes assez « chaudes » et à frictionner vos pieds pour les réchauffer (entre eux, sur vos mollets ou avec vos mains par exemple).
+                            <br>
+                            <br>8 – Lutter contre l’humidité<br>
+                            Cette satané humidité, encore et toujours ! Il faut l’éviter à tout prix, en gardant ses affaires au sec dans la journée.
+
+                            Il faut aussi faire attention à l’humidité du sol en choisissant bien son emplacement pour la nuit et en ayant une barrière vraiment imperméable. 
+                            En plus de ça, il faut également faire attention à la condensation qui est courante dans les abris/tentes et ne pas hésiter à l’essuyer dans la nuit si nécessaire.
+
+                            Il est primordial de bien ajuster sa température corporelle (en ajoutant ou pas des vêtements et en ouvrant ou pas le sac de couchage) et ne pas avoir trop chaud au risque de transpirer puis d’avoir froid, le comble… 
+                            Evitez également d’enfouir votre tête dans votre sac de couchage (je sais c’est tentant) car votre respiration va ajouter de l’humidité à l’intérieur.
+
+                            Je vous conseille également de prendre l’habitude de faire sécher ou d’aérer votre sac de couchage quand les conditions le permettent, ça évitera que trop d’humidité ne s’accumule dedans d’un jour à l’autre et ne diminue ses performances. C’est d’autant plus important pour les sacs de couchage en duvet qui sont plus sensibles à l’humidité.
+                            <br>
+                            <br>9 – Faire attention à la transpiration<br>
+                            C’est la petite astuce glamour. 😉 Quand vous avez transpiré, se déposent sur votre peau et vos vêtements des sels. Ce sont d’ailleurs les traces blanches que vous pouvez parfois observer sur les t-shirts. Le problème est que ces sels ont tendance à absorber l’humidité et que même bien équipé et bien vêtu, vous pourriez avoir froid.
+                            
+                            Je vous conseille donc d’utiliser des vêtements dans lesquels vous n’avez pas transpiré pour dormir. Je garde par exemple généralement une tenue sèche pour le soir et la nuit. Et, si vous en avez le courage et la possibilité, je vous conseille de vous laver ou de vous rincer, ça fera une grande différence.
+                            <br>
+                            <br>10 – Aller uriner si nécessaire<br>
+                            On reste dans le glamour, mais c’est pour une bonne cause : passer une bonne nuit au chaud. 😉 Quand on est dans son sac de couchage et que l’on a envie d’uriner, le premier réflexe est de se dire « ça attendra » car on pense au parcours du combattant par lequel il va falloir passer.
+                            
+                            Pourtant, le corps dépense pas mal d’énergie pour garder l’urine au chaud alors qu’il pourrait dépenser cette énergie pour réchauffer d’autres parties de votre corps. C’est pourquoi je vous conseille de trouver le courage de vous extirper de votre sac de couchage et mener à bien votre mission.
+                            <br>
+                            <br>11 – Se protéger du vent<br>
+                            Le facteur vent (dont je parle dans cet article) est quelque chose à ne pas négliger la nuit. Essayez de vous protéger au mieux du vent et d’éviter les courants d’air – qui « poussent » l’air réchauffé loin de vous. Choisissez stratégiquement votre emplacement en fonction du vent et des abris/pare-vent disponibles (murets, haies, talus, etc.).
+                            
+                            Si vous dormez sous une tente à double toit, pensez également à bien tendre la toile extérieure pour laisser un espace d’air isolant entre la toile intérieure et le double toit.
+                            
+                            N’oubliez pas de fermer la tente non plus, par contre, attention de ne pas vous cloitrer complètement en empêchant tous les échanges d’air, car le taux d’humidité risque d’augmenter fortement.
+                            <br>
+                            <br>12 – Optimiser la bonne position dans son sac de couchage<br>
+                            Là, on attaque un point qui peut paraître ridicule, mais tous ceux qui ont passé des nuits bien froides comprendront exactement ce que je veux dire – car la différence entre une bonne et mauvaise nuit ne se joue parfois pas à grand-chose dans ces conditions.
+                            
+                            La plupart des sacs de couchage de randonnée sont étroits et ajustés pour éviter les points froids. Ils sont également faits pour tourner avec le sac de couchage et non pas dans le sac de couchage. De la même manière, si vous dormez regroupé (chose très probable s’il fait froid), ne vous regroupez pas dans le sac de couchage, mais regroupez le sac de couchage avec vous.
+                            <br>
+                            <br>13 – Limiter les échanges d’air entre l’intérieur et l’extérieur<br>
+                            Si trop d’air circule entre l’extérieur et l’intérieur du sac de couchage, l’énergie dépensée à chauffer l’air à l’intérieur du sac de couchage ne sert pas à grand-chose.
+                            Pour limiter les échanges d’air, l’idéal est d’utiliser la collerette et/ou la capuche disponibles dans certains sacs de couchages et de les ajuster à l’aide des cordons de serrage. L’idéal est de n’avoir que le nez et la bouche à l’extérieur du sac de couchage.
+                            <br>
+                            <br>14 – Augmenter sa température corporelle avant de se coucher<br>
+                            Si jamais vous avez un peu froid avant de vous coucher ou prévoyez une nuit assez fraîche, je vous recommande d’essayer d’élever votre température corporelle (sans transpirer) avant d’aller vous coucher – l’idéal étant de ne pas la perdre entre la randonnée et le moment de se coucher. Cela vous permettra de vous endormir plus rapidement et il est généralement plus facile de le faire avant de rentrer dans son sac de couchage. Tous les moyens sont bons, vous pouvez courir sur place, sauter, danser, gesticuler, etc.
+                            
+                            Une fois dans votre sac de couchage, ou si vous vous réveillez en pleine nuit et souhaitez vous réchauffer, essayez de contracter tous les muscles de votre corps (ou un maximum) pendant quelques secondes puis de relâcher, puis de contracter, etc. Cela produira un peu d’énergie qui vous réchauffera.
+                            <br>
+                            <br>Note : plus vous vous couchez longtemps après votre effort de la journée, moins vous bénéficierez de l’effet de la « surchauffe » liée à l’effort.
+                            <br>
+                            <br>15 – Utiliser une bouillote<br>
+                            Pour réchauffer votre sac de couchage avant de vous y glisser, vous pouvez créer une bouillote en mettant de l’eau chaude dans une gourde ou une bouteille et en la glissant dans votre sac de couchage quelques dizaines de minutes avant de vous coucher.
+                            
+                            Attention d’être sûr que votre bouillote artisanale ne risque pas de fuir – sinon une nuit cauchemardesque vous attend.
+                            <br>
+                            <br>16 – S’alimenter et s’hydrater correctement<br>
+                            La digestion mobilise beaucoup d’énergie, il vaut donc mieux éviter de manger trop lourd avant de se coucher. Cependant, il faut aussi s’alimenter suffisamment pour récupérer et pouvoir repartir le lendemain. Il faut donc réussir à trouver un bon compromis, soit en mangeant plus pendant la journée soit en mangeant suffisamment longtemps avant le moment d’aller se coucher.
+                            
+                            A savoir qu’une boisson chaude telle qu’une soupe ou une tisane avant de se coucher permet de se réchauffer un peu et de se réhydrater – chose importante car la déshydratation favorise la sensation de froid.
+                            <br>
+                            <br>17 – Dormir collé à son coéquipier<br>
+                            Si après avoir suivi toutes ces astuces, vous avez toujours froid, il ne vous reste plus qu’à vous coller à votre coéquipier (si vous en avez un). 😉</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="application" class="container first application">
+            <h1>5 applications et sites web pour la randonnée pédestre</h1>
+            <p>De nos jours, avant de préparer une sortie de plein air, on fait appel à la technologie, notamment en repérant sur Internet quels sentiers conviendront à toute la famille. On peut aussi emporter les itinéraires, cartes de randonnée et autres informations pratiques durant la balade grâce à des applications mobiles. Voici nos meilleures trouvailles.
+            </p>
+            <div class="row">
+                <div class="col-6 application--col">
+                    <h3>1. BaliseQc (pour le Québec)</h3>
+                    <p>Ce répertoire en ligne regroupe tous les sentiers québécois par saison et selon un outil de recherche très pointu : par régions, lieux, nom de sentier, montagnes, par catégories, quais d’accès gratuit, chiens en laisse permis, longues randonnées.</p>
+                    <a href="https://baliseqc.ca/3S/" target="_blank">BaliseQc</a>
+                    <br>
+                    <a class="application--img"><img src="img/baliseqc.jpg"></a>
+                </div>
+                <div class="col-6 application--col">
+                    <h3>2. Hikster (pour le Québec)</h3>
+                    <p>L’application Hikster est une plateforme qui recense jusqu’à maintenant plus de 2800 sentiers de randonnée pédestre et de raquette au Québec, avec l’option de recherche « mon chien m’accompagne », ainsi que la longueur et la difficulté du sentier désiré.</p>
+                    <a href="https://hikster.com/" target="_blank">Hikster</a>
+                    <br>
+                    <a class="application--img"><img src="img/hikster-1.jpg"></a>
+                </div>
+                <div class="col-6 application--col">
+                    <h3>3.  Ondago (pour le Québec)</h3>
+                    <p>L’avantage de l’application Ondago, développée par les Créations Igloo de Québec, est qu’on peut se géolocaliser sur un territoire avec exactitude (GPS), même si on n’est pas en ligne. C’est comme une carte en papier, sur laquelle on sait où on se trouve! Très utile pour repérer sa position dans les sentiers sans accès Internet.</p>
+                    <a href="https://igloocreations.com/fr/home/" target="_blank">Ondago</a>
+                    <br>
+                    <a class="application--img"><img src="img/ondago1.png"></a>
+                </div>
+                <div class="col-6 application--col">
+                    <h3>4. AllTrails (pour l’Amérique du Nord)</h3>
+                    <p>Site collaboratif, Alltraits a bénéficié d’un bon nombre d’utilisateurs pour étendre son offre à plus de 50 000 itinéraires en Amérique du Nord pour la randonnée pédestre, le vélo, le jogging… La recherche se fait par lieux de marche et autres critères, par exemple si le sentier convient aux enfants, aux chiens…</p>
+                    <a href="https://www.alltrails.com/fr/mobile" target="_blank">AllTrails</a>
+                    <br>
+                    <a class="application--img"><img src="img/alltrails(1).jpg"></a>
+                </div>
+                <div class="col-6 application--col">
+                    <h3>5. Virtual trekking</h3>
+                    <p>On peut télécharger ses vidéos de sentiers de marche sur notre téléphone intelligent ou notre tablette, afin de synchroniser nos pas avec nos compagnons de route virtuels!</p>
+                    <a href="https://www.virtualtrekking.com/" target="_blank">Virtual trekking</a>
+                    <br>
+                    <a class="application--img"><img src="img/virtual-trekking-exercice.jpg"></a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer__logo">
+                <img src="img/icons/randologo1-modified.png">
+            </div>
+            <div class="footer__social">
+                <p>Fait par : Mme. Caroline Poulin</p>
+                <div class="footer__icons">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__icon" tabindex="0"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://fr.linkedin.com/" target="_blank" class="footer__icon" tabindex="0"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/" target="_blank" class="footer__icon" tabindex="0"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__icon" tabindex="0"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footer__contact">
+                    <a href="tel:+1234567890" class="footer__link" tabindex="0"><i class="fa-solid fa-phone"></i><span>123-456-7890</span></a>
+                    <a href="mailto:cegep@troisriviere.ca" class="footer__link" tabindex="0"><i class="fa-solid fa-envelope"></i><span>cegep@troisriviere.ca</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="bootstrap-5.1.3\dist\js\bootstrap.bundle.js"></script>
+</body>
+</html>

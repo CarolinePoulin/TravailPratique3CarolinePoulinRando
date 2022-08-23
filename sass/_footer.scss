@@ -1,0 +1,58 @@
+@use './variables';
+
+.footer {
+    background-color: variables.$colorgrispale;
+    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+
+    .footer__logo {
+      //  background-color: variables.$colorgrispale;
+        display: flex;
+        justify-content: center;
+    }
+    .footer__social {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+            margin: 1.5rem 0;
+            color: variables.$colorbleufonce;
+        }
+        .footer__icons {
+            font-size: 1.5rem;
+            .footer__icon {
+                margin: 0 0.3rem;
+                &:hover, &:focus {
+                    color: variables.$colorgrisfonce;
+                }
+            }
+        }
+        .footer__contact {
+            display: flex;
+            .footer__link {
+                margin: 0;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                &:hover, &:focus {
+                    color: variables.$colorgrisfonce;
+                }
+                span {
+                    text-decoration: underline;
+                }
+                &:first-child {
+                    margin-right: 1rem;
+                }
+            }
+            i {
+                font-size: 1.5rem;
+                margin-right: 0.3rem;
+            }
+        }
+    }
+}

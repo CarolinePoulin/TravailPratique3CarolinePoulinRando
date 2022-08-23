@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('service-worker.js')
+                    .then((reg) => {
+                        console.log('Notre service worker est chargé !', reg);
+                    });
+                });
+            }
+        </script>
+        <title>TP3_POULINCAROLINE</title>
+    </head>
+<body>
+    <a class="screen-reader-text" href="#content">Aller au contenu principal</a>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid navbar--div">
+                <a class="navbar-brand" href="index.html" tabindex="0"><img src="img/icons/randologo70px-modified.png" alt="logo"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html" role="tab" tabindex="0">Accueil</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" tabindex="0" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Endroits</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="endroits.html#chaudiereAppalaches">Chaudière-Appalaches</a></li>
+                                <li><a class="dropdown-item" href="endroits.html#montagneBeauce">Montagne en Beauce</a></li>
+                                <li><a class="dropdown-item" href="endroits.html#toutou">Ou aller avec Toutou</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" tabindex="0" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">A Savoir</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="asavoir.html#savoir">Choses à savoir</a></li>
+                                <li><a class="dropdown-item" href="asavoir.html#nourriture">Nourriture</a></li>
+                                <li><a class="dropdown-item" href="asavoir.html#deshydrater">Déshydratation</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" tabindex="0" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hébergement</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="hebergement.html#ouDormir">Où Dormir</a></li>
+                                <li><a class="dropdown-item" href="hebergement.html#auChaud">Rester au chaud</a></li>
+                                <li><a class="dropdown-item" href="hebergement.html#application">Applications utiles</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="enregistrer.html" role="tab" tabindex="0">S'enregistrer</a></li>
+                        <li class="nav-item"><button id="butInstall" aria-label="Install" hidden>Installer la PWA</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="chaudiereAppalaches" class="container first lieux">
+            <h1>10 lieux de plein air pour profiter de la région<br>Chaudière-Appalaches sans se ruiner</h1>
+            <p>Saison estivale rime souvent avec vacances et dépenses, mais pourquoi se ruiner lorsqu’on peut profiter de plusieurs 
+                attraits gratuitement ? Avec ses paysages à couper le souffle, ses nombreuses montagnes et cours d’eau, la région de 
+                Chaudière-Appalaches regorge de lieux splendides, qui sont accessibles gratuitement ou à peu de frais. 
+                Voici quelques-uns de ces lieux. À découvrir pour les amateurs de plein air.</p>
+            
+            <div class="row g-4">
+                <div class="col-6">
+                    <div class="card bg-dark text-white">
+                        <img src="img/endroits/7chutes.jpg" class="card-img" alt="Parc des 7 chutes">
+                        <div class="card-img-overlay">
+                            <h2 class="card-title btn btn-primary" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="true" aria-controls="collapse1">1. Le parc de Sept-Chutes, Saint-Georges</h2>
+                            <p class="card-img--float"><img src="img/paw-modified.png"></p>
+                            <p class="card-text collapse.show" id="collapse1">Un incontournable, ce parc saura vous charmer avec ses 8 kilomètres de sentiers balisés qui vous mèneront 
+                                jusqu’au pont suspendu ; celui-ci exhibe une vue à couper le souffle.</p>
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Nos coups de coeur
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    En quelques mots
+                                </button>
+                                <button class="btn btn-primary" type="button">
+                                    <a class="lieux--lienWeb" href="https://loisirs.saint-georges.ca/parcs-et-espaces-verts/parc-des-sept-chutes/" target="_blank">Lien web</a>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-horizontal text-black" id="collapseOne">
+                        <div class="card card-body" >
+                            <h2 class="modal-title" id="staticBackdropLabel">NOS COUPS DE COEUR (6)</h2>
+                            <p class="modal-texte">
+                                <br> - Piste cyclable
+                                <br> - Prêt de jeux
+                                <br> - Passerelle de l'Alliance qui surplombe la rivière Pozer
+                                <br> - Aires de jeux et de pique-nique
+                                <br> - 5 terrains de Volleyball de plage éclairés
+                                <br> - Divers sentiers de marche, 5 sentiers à découvrir
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-horizontal text-black" id="collapseTwo">
+                        <div class="card card-body" >
+                            <h2 class="modal-title" id="staticBackdropLabel">EN QUELQUES MOTS</h2>
+                            <p class="modal-texte">
+                                <br> À 5 minutes du centre-ville, le parc des Sept-Chutes est l'un des plus beaux parcs urbains en Chaudière-Appalaches 
+                                et charme quelques 50 000 visiteurs chaque année par ses arbres gigantesques dans une forêt urbaine aménagée de 80 hectares, 
+                                un réseau de sentiers incluant le Sentier des Gorges de la rivière Pozer et la passerelle de l'Alliance, qui surplombe la 
+                                septième chute, est suspendue à plus de 25 mètres de hauteur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="card bg-dark text-white">
+                        <img src="img/endroits/RapideDuDiable.jpg" class="card-img" alt="Parc des rapides du diable">
+                        <div class="card-img-overlay">
+                            <h2 class="card-title btn btn-primary" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="true" aria-controls="collapse2">2. Le parc des Rapide-du-Diable, Beauceville</h2>
+                            <p class="card-img--float"><img src="img/paw-modified.png"></p>
+                            <p class="card-text collapse.show" id="collapse2">Au bord de la rivière Chaudière ce parc vous offre un kilomètre de sentiers balisés à 
+                                l’intérieur d'une magnifique forêt.</p>
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Nos coups de coeur
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    En quelques mots
+                                </button>
+                                <button class="btn btn-primary" type="button">
+                                    <a class="lieux--lienWeb" href="https://ville.beauceville.qc.ca/parc-des-rapides-du-diable/" target="_blank">Lien web</a>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-horizontal text-black" id="collapseThree">
+                        <div class="card card-body" style="max-width: 800px;">
+                            <h2 class="modal-title" id="staticBackdropLabel">NOS COUPS DE COEUR (4)</h2>
+                            <p class="modal-texte">
+                                <br> - Vue exceptionnelle sur la rivière Chaudière et les Rapides-du-Diable
+                                <br> - 1 km de sentiers pour la randonnée et la raquette en hiver
+                                <br> - 7 panneaux thématiques, pour découvrir l'histoire de ce parc et l'origine de son nom
+                                <br> - Aire de repos et de pique-nique
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-horizontal text-black" id="collapseFour">
+                        <div class="card card-body" style="max-width: 800px;">
+                            <h2 class="modal-title" id="staticBackdropLabel">EN QUELQUES MOTS</h2>
+                            <p class="modal-texte">
+                                <br>Le Parc des Rapides-du-Diable est situé entre la route 173 et la rivière Chaudière dans le territoire de la 
+                                Ville de Beauceville, en plein coeur de la Beauce. Pour les amoureux de vélo, un accès direct avec stationnement 
+                                pour la piste cyclable et pour la véloroute de la Chaudière et une vue exceptionnelle sur la rivière Chaudière 
+                                et les Rapides-du-Diable. Découvrez l'histoire de ce parc, son passé aurifère, l'origine de son nom et 
+                                l'influence de Benedict Arnold en consultant les panneaux thématiques.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="card bg-dark text-white">
+                        <img src="img/endroits/DomaineTaschereau.jpg" class="card-img" alt="Domaine Taschereau">
+                        <div class="card-img-overlay">
+                            <h2 class="card-title btn btn-primary" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="true" aria-controls="collapse3">3. Domaine Taschereau, Sainte-Marie</h2>
+                            <p class="card-img--float"><img src="img/paw-modified.png"></p>
+                            <p class="card-text collapse.show" id="collapse3">À l’intérieur de ses 53 acres de forêt, le domaine présente une grande variété de faune et de 
+                                flore, dont un éventail de plusieurs types de milieux humides.</p>
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Nos coups de coeur
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    En quelques mots
+                                </button>
+                                <button class="btn btn-primary" type="button">
+                                    <a class="lieux--lienWeb" href="http://www.domainetaschereau.com/" target="_blank">Lien web</a>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-horizontal text-black" id="collapseFive">
+                        <div class="card card-body" style="max-width: 800px;">
+                            <h2 class="modal-title" id="staticBackdropLabel">NOS COUPS DE COEUR (5)</h2>
+                            <p class="modal-texte">
+                                <br> - Découvrez l'histoire de l'illustre famille Taschereau
+                                <br> - La Chapelle Sainte-Anne - Expo, dédiée à Sainte-Anne, de style néo-classique datant de 1890
+                                <br> - Un parcours dans le parc, historico-fantastique "Les Lieux enchantés"
+                                <br> - Conférences, activités, boutique culturelle, souvenirs et +
+                                <br> - Découvrez l'influence des inondations sur le milieu naturel.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-horizontal text-black" id="collapseSix">
+                        <div class="card card-body" style="max-width: 800px;">
+                            <h2 class="modal-title" id="staticBackdropLabel">EN QUELQUES MOTS</h2>
+                            <p class="modal-texte">
+                                <br>Bienvenue au parc écologique le plus inondable au Québec! Situé au coeur de la ville de Sainte-Marie, le parc nature 
+                                du Domaine Taschereau dévoile ses écosystèmes humides par le biais de 25 panneaux d'interprétation. Le site est idéal pour 
+                                la marche et la contemplation (plus de 150 espèces d'oiseaux observées). Les randonneurs (et les pique-niqueurs!) 
+                                apprécieront la vue à 360 degrés de l'Éco-refuge Desjardins et la passerelle aérienne Placide-Poulin, érigée à la hauteur 
+                                des légendaires inondations de la Chaudière (5 mètres). En hiver, parcourez le site en ski de fond, à la marche ou en 
+                                raquette.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="card bg-dark text-white">
+                        <img src="img/endroits/DomaineStElzear.jpg" class="card-img" alt="Domaine St Elzear">
+                        <div class="card-img-overlay">
+                            <h2 class="card-title btn btn-primary" data-bs-toggle="collapse" href="#collapse4" role="button" aria-expanded="true" aria-controls="collapse4">4. Domaine du Radar, Saint-Elzéar</h2>
+                            <p class="card-text collapse.show" id="collapse4">Situé sur une ancienne base militaire construite dans les années 1950, le Domaine du Radar vous offre 
+                                une panoplie de services, sans compter ses paysages spectaculaires.</p>
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSept" aria-expanded="false" aria-controls="collapseSept">
+                                    En quelques mots
+                                </button>
+                                <button class="btn btn-primary" type="button">
+                                    <a class="lieux--lienWeb" href="https://www.domaineduradar.com/contact/" target="_blank">Lien web</a>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-horizontal text-black" id="collapseSept">
+                        <div class="card card-body" style="max-width: 800px;">
+                            <h2 class="modal-title" id="staticBackdropLabel">ÉVADEZ-VOUS EN PLEINE NATURE</h2>
+                            <p class="modal-texte">
+                                Venez gravir le mont Sainte-Marguerite, le plus haut sommet en Chaudière-Appalaches, en empruntant nos magnifiques 
+                                sentiers de randonnée!
+                                En effet, le Domaine du Radar vous propose cinq sentiers sur 8 kilomètre et une piste consacrée à la marche nordique avancée qui 
+                                s'étendent sur plusieurs kilomètres en forêt. Bien entretenus et clairement balisés, nos sentiers s'adressent aux 
+                                randonneurs de tous niveaux.
+                                Une plage a aussi été récemment aménagée. Sur place, des espaces de camping, des chalets et des yourtes 
+                                sont également disponibles, et il est possible de s’inscrire pour des cours de survie en forêt.
+                                La plus belle vue panoramique de la région vous attend à votre arrivée au sommet ! Lorsque le ciel est dégagé, vous 
+                                pouvez voir à des kilomètres à la ronde des paysages magnifiques et typiques de Chaudière-Appalaches.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="card bg-dark text-white">
+                        <img src="img/endroits/SentierMineurs.jpg" class="card-img" alt="Sentier des Mineurs">
+                        <div class="card-img-overlay">
+                            <h2 class="card-title btn btn-primary" data-bs-toggle="collapse" href="#collapse5" role="button" aria-expanded="true" aria-controls="collapse5">5. Sentier des Mineurs, Sacré-cœur-de-Jésus</h2>
+                            <p class="card-text collapse.show" id="collapse5">Situé entre la région beauceronne et Thetford Mines, ce sentier vous offre 7,8 kilomètres de sentiers 
+                                de niveaux facile à intermédiaire.</p>
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    En quelques mots
+                                </button>
+                                <button class="btn btn-primary" type="button">
+                                    <a class="lieux--lienWeb" href="https://regiondethetford.chaudiereappalaches.com/fr/voyage-quebec/region-de-thetford/sacre-coeur-de-jesus/le-sentier-des-mineurs/randonnee-pedestre/" target="_blank">Lien web</a>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-horizontal text-black" id="collapseSeven">
+                        <div class="card card-body" style="max-width: 800px;">
+                            <h2 class="modal-title" id="staticBackdropLabel">EN QUELQUES MOTS</h2>
+                            <p class="modal-texte">
+                                Le Sentier des mineurs est un site de randonnée pédestre de niveau facile. En parcourant à pied ou même en ski les 
+                                différentes boucles qui totalisent 7,8 km, vous découvrirez points de vue, aires de repos, belvédères et panneaux 
+                                d'interprétations historiques, géologiques et fauniques. Une aire de jeux pour les enfants ainsi qu'une aire de 
+                                pique-nique des plus artistiques complètent l'offre du site.
+                                Le site se démarque comme étant un des rares endroits de la région de Thetford où la nature a repris ses droits suite 
+                                à l'exploitation minière. Vous aurez la chance de partir à la découverte de deux anciens puits de mines devenus de 
+                                grands lacs : la Mine Boston (lac Boston) et la Mine Carey. Le Lac Boston est alimenté par une superbe chute, ce qui 
+                                fait que le milieu est propice à l'ensemencement de poissons pour la pêche sportive. 
+                                La Mine Carey pour sa part offre une vue magnifique sur une eau d'une couleur turquoise foncée.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="card bg-dark text-white">
+                        <img src="img/endroits/MontGrandMorne.jpg" class="card-img" alt="Mont Grand Morne">
+                        <div class="card-img-overlay">
+                            <h2 class="card-title btn btn-primary" data-bs-toggle="collapse" href="#collapse6" role="button" aria-expanded="true" aria-controls="collapse6">6. Mont Grand Morne, Sainte-Clotilde-de-Beauce</h2>
+                            <p class="card-img--float"><img src="img/paw-modified.png"></p>
+                            <p class="card-text collapse.show" id="collapse6">Situé à 40 minutes de la ville de Saint-Georges, ce mont est un paradis pour les amateurs de 
+                                sensations fortes.</p>
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    En quelques mots
+                                </button>
+                                <button class="btn btn-primary" type="button">
+                                    <a class="lieux--lienWeb" href="https://www.ste-clotilde.com/pages/mont-grand-morne" target="_blank">Lien web</a>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-horizontal text-black" id="collapseEight">
+                        <div class="card card-body" style="max-width: 800px;">
+                            <h2 class="modal-title" id="staticBackdropLabel">EN QUELQUES MOTS</h2>
+                            <p class="modal-texte">
+                                Plusieurs sentiers, totalisant 6 km, évoquent le trekking en montagne et conduisent au sommet d'une altitude de 608 mètres 
+                                où des tours d'observation permettent d'avoir une vue spectaculaire de la région. Des aires de repos, d'interprétation, 
+                                d'observation des étoiles et de camping sauvage y sont aussi aménagées.
+                                Les amateurs de grimpe seront comblés! Plusieurs voies ont été aménagés pour favoriser la pratique de ce sport. 
+                                Les amateurs de vol libre trouveront l'une des plus belles plateformes de départ.
+                                La montagne est située dans la Municipalité de Sainte-Clotilde-de-Beauce offrant plusieurs services et attraits dont un 
+                                Pont couvert et un antique barrage.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="card bg-dark text-white">
+                        <img src="img/endroits/SentierCampions.jpg" class="card-img" alt="Sentier Campions">
+                        <div class="card-img-overlay">
+                            <h2 class="card-title btn btn-primary" data-bs-toggle="collapse" href="#collapse7" role="button" aria-expanded="true" aria-controls="collapse7">7. Sentier des Campions, Saint-Pierre-de-Broughton</h2>
+                            <p class="card-img--float"><img src="img/paw-modified.png"></p>
+                            <p class="card-text collapse.show" id="collapse7">Pour les amateurs de randonnée peu périlleuse, ce sentier vous offre 2,5 kilomètres de sentiers 
+                                linéaires qui vous permettront d’observer une grande diversité de faune et de flore.</p>
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    En quelques mots
+                                </button>
+                                <button class="btn btn-primary" type="button">
+                                    <a class="lieux--lienWeb" href="https://regiondethetford.chaudiereappalaches.com/en/travel-quebec/region-de-thetford/saint-pierre-de-broughton/le-sentier-des-campions/hiking/" target="_blank">Lien web</a>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-horizontal text-black" id="collapseNine">
+                        <div class="card card-body" style="max-width: 800px;">
+                            <h2 class="modal-title" id="staticBackdropLabel">EN QUELQUES MOTS</h2>
+                            <p class="modal-texte">
+                                Le Sentier des Campions est un sentier linéaire de près d'un kilomètre auquel deux autres boucles se greffent, 
+                                totalisant un peu plus de 2 km.
+                                Les trois parcours, nommés Whetstone, le Petit Cap et Les Campions, se trouvent dans un boisé mixte, très diversifié 
+                                en ce qui a trait aux essences d'arbres et de végétaux. Des panneaux d'interprétation sont placés tout au long des 
+                                sentiers. Le début du sentier linéaire longe la très jolie rivière Whetstone.
+                                Deux des sentiers sont de niveau de difficulté «facile» et le troisième, le plus long, est classé «intermédiaire».
+                                La légende veut qu’un groupe de personnes sans-abris et à la recherche de travail, se soient construit un refuge 
+                                en hiver à cet endroit au milieu du 19e siècle. Le nom du sentier "les Campions" a été donné en hommage à cette légende.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="card bg-dark text-white">
+                        <img src="img/endroits/LacCaribou.jpg" class="card-img" alt="Lac Caribou">
+                        <div class="card-img-overlay">
+                            <h2 class="card-title btn btn-primary" data-bs-toggle="collapse" href="#collapse8" role="button" aria-expanded="true" aria-controls="collapse8">8. Lac Caribou, Lac-Etchemin</h2>
+                            <p class="card-img--float"><img src="img/paw-modified.png"></p>
+                            <p class="card-text collapse.show" id="collapse8">Pour les randonneurs qui recherchent le calme et la tranquillité, ces sentiers sauront sans aucun 
+                                doute vous plaire.</p>
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                    En quelques mots
+                                </button>
+                                <button class="btn btn-primary" type="button">
+                                    <a class="lieux--lienWeb" href="https://www.tourismeetchemins.qc.ca/attrait/sentier-du-lac-caribou/" target="_blank">Lien web</a>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-horizontal text-black" id="collapseTen">
+                        <div class="card card-body" style="max-width: 800px;">
+                            <h2 class="modal-title" id="staticBackdropLabel">EN QUELQUES MOTS</h2>
+                            <p class="modal-texte">
+                                Les boucles de 5,1 et 1,2 kilomètres vous charmeront avec leurs multiples petits ponts artisanaux 
+                                et une flore riche de plusieurs espèces. Le plus grand sentier vous permet de longer le bord du lac où sont aménagées 
+                                quelques aires de repos. Le sentier fait une boucle de 6 km qui longe, en forêt publique (175 ha), la berge d'un lac 
+                                vierge de 19 ha, le lac Caribou, et d'un grand marais de même superficie. Ces forêts précoloniales ont plus de 200 ans. 
+                                Le site présente une très riche biodiversité et quelques curiosités naturelles. 
+                                Il est très fréquenté par les oiseaux migrateurs.
+                                Nombreux points de vue. 93 espèces d'oiseaux répertoriées sur ce site sauvage. Secteurs de vieilles forêts. 
+                                20 panneaux d'interprétation. Un parcours de 5 km est aussi possible en évitant la boucle du Marais.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="card bg-dark text-white">
+                        <img src="img/endroits/SentierMontBelanger.jpg" class="card-img" alt="Sentier Mont-Bélanger">
+                        <div class="card-img-overlay">
+                            <h2 class="card-title btn btn-primary" data-bs-toggle="collapse" href="#collapse9" role="button" aria-expanded="true" aria-controls="collapse9">9. Sentiers du Mont-Bélanger, Saint-Robert-Bellarmin</h2>
+                            <p class="card-text collapse.show" id="collapse9">Situé à 40 minutes de la ville de Saint-Georges, ce site vous révèle une vue panoramique des plus 
+                                majestueuse, qui vous permet même de voir de l’autre côté de la frontière américaine.</p>
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                    En quelques mots
+                                </button>
+                                <button class="btn btn-primary" type="button">
+                                    <a class="lieux--lienWeb" href="https://www.montbelanger.qc.ca/" target="_blank">Lien web</a>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-horizontal text-black" id="collapseEleven">
+                        <div class="card card-body" style="max-width: 800px;">
+                            <h2 class="modal-title" id="staticBackdropLabel">EN QUELQUES MOTS</h2>
+                            <p class="modal-texte">
+                                Le Mont Bélanger, localisé à proximité de St-Robert Bellarmin, se dresse à plus de 960 mètres d’altitude.
+                                Sous le couvert d’un paysage à couper le souffle, entre les collines, les escarpements et les lacs, les amants de la 
+                                nature peuvent profiter d’une faune luxuriante et d’un paysage qui relève ni plus ni moins des plus belles cartes 
+                                postales. Via des sentiers pédestres, au-dessus de chacun des nombreux sommets se dessinent une nouvelle perspective.
+                                Les Éboulis et le Lac Émilie ne sont que des exemples de sites tout à fait charmants.
+                                Le mont Bélanger offre 8 sentiers totalisant 20 km de randonnée avec dénivelés de 120 à 420 mètres !
+                                Lors de votre passage, vous pourrez profiter de plusieurs kilomètres de sentiers afin de vous rendre à la tour 
+                                d’observation de 6 mètres érigée au sommet du mont d’une altitude de 960 mètres. Plusieurs espaces de camping 
+                                sauvage et un petit chalet sont également disponibles pour ceux qui souhaitent y rester pour la nuit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="card bg-dark text-white">
+                        <img src="img/endroits/DomaineHeritage.JPG" class="card-img" alt="Domaine l'héritage">
+                        <div class="card-img-overlay">
+                            <h2 class="card-title btn btn-primary" data-bs-toggle="collapse" href="#collapse10" role="button" aria-expanded="true" aria-controls="collapse10">10. Domaine à l’héritage, Saint-Séverin</h2>
+                            <p class="card-text collapse.show" id="collapse10">Pour ceux et celles qui préfèrent les balades un peu moins sauvages, ce site est un incontournable. 
+                                Dans un décor enchanteur, vous pourrez vous balader tranquillement à travers les magnifiques sculptures et les nombreux arrangements floraux.</p>
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                    En quelques mots
+                                </button>
+                                <button class="btn btn-primary" type="button">
+                                    <a class="lieux--lienWeb" href="http://www.domainealheritage.com/" target="_blank">Lien web</a>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-horizontal text-black" id="collapseTwelve">
+                        <div class="card card-body" style="max-width: 800px;">
+                            <h2 class="modal-title" id="staticBackdropLabel">EN QUELQUES MOTS</h2>
+                            <p class="modal-texte">
+                                Au nombre des merveilles de Chaudière-Appalaches, mais plus précisément de la Beauce, il y a au fin fond d’un rang 
+                                à Saint-Séverin, le Domaine à l’Héritage. Un jardin public qui se veut surtout un espace de détente.
+                                Le Domaine à l’Héritage, c’est l’histoire d’une famille, 
+                                celle d’Arthur Lachance. L’aménagement du site, qui a débuté il y a une trentaine d’années, a été fait pour rendre 
+                                hommage aux pionniers de la Beauce et reconnaître leur labeur. 
+                                Au fil des 15 stations proposées, on y retrouve sept lacs et étangs ainsi que des aménagements paysagers agrémentés 
+                                de sculptures. Mieux encore, des kiosques, des patios, des chaises longues et des tables à pique-nique peuvent être 
+                                utilisés pour profiter de la beauté des lieux et se ressourcer.
+                                Plusieurs plateaux présentant différents décors sauront vous charmer à tout coup. Cet endroit est très prisé notamment 
+                                pour les photos de mariage grâce à son décor pittoresque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="montagneBeauce" class="container first montagne">
+            <h1>Huit montagnes à gravir dans le coin de la Beauce</h1>
+            <p>L’appel de la nature, des grands espaces et d’un point de vue à couper le souffle, telles sont les raisons qui poussent à gravir une montagne. 
+                Plusieurs montagnes sont accessibles facilement dans le coin de la Beauce pour se promener en famille ou entre amis, pour surpasser ses limites ou encore simplement pour respirer et s’évader un peu de sa routine. 
+                EnBeauce.com vous propose ici une liste de ces espaces naturels qui sont ouverts pendant l’été et qui proposent de la randonnée pédestre de différents niveaux.</p>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/endroits/MontGrandMorne2.jpg" class="d-block w-100 card-img" alt="Mont Grand Morne">
+                        <div class="card-img-overlay">
+                            <h4>Mont Grand Morne</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/endroits/SentierMontBelanger2.jpg" class="d-block w-100 card-img" alt="Sentier Mont Bélanger">
+                        <div class="card-img-overlay">
+                            <h4>Mont Bélanger</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/endroits/MontAdstock2.jpg" class="d-block w-100 card-img" alt="Mont Adstock">
+                        <div class="card-img-overlay">
+                            <h4>Mont Adstock</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/endroits/ParcMassifSud2.jpg" class="d-block w-100 card-img" alt="Parc Massif du Sud">
+                        <div class="card-img-overlay">
+                            <h4>Parc du Massif du Sud</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/endroits/TroisMontColeraine2.jpg" class="d-block w-100 card-img" alt="Trois Mont Coleraine">
+                        <div class="card-img-overlay">
+                            <h4>Trois Mont de Coleraine</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/endroits/ParcAppalaches2.jpg" class="d-block w-100 card-img" alt="Parc Appalaches">
+                        <div class="card-img-overlay">
+                            <h4>Parc des Appalaches</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/endroits/MontHam2.jpg" class="d-block w-100 card-img" alt="Mont Ham">
+                        <div class="card-img-overlay">
+                            <h4>Mont Ham</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/endroits/MontGosford2.jpg" class="d-block w-100 card-img" alt="Mont Gosford">
+                        <div class="card-img-overlay">
+                            <h4>Mont Gosford</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>Mont Grand Morne, Sainte-Clotilde-de-Beauce</h3>
+            <p class="card-img--float"><img src="img/paw-modified.png"></p>
+            <p>Au total, ce sont six kilomètres de sentiers en montagne qui conduisent au sommet de ce Mont haut de 608 mètres d’altitude. Une fois en haut, des tours d’observation permettent de profiter pleinement de la vue.
+                <a href="https://www.ste-clotilde.com/pages/mont-grand-morne" target="_blank"> Lien web</a>
+
+                <h3>Mont Bélanger, Saint-Robert-Bellarmin</h3>
+                Plusieurs sentiers pédestres permettent de profiter d’une faune importante et des paysages qui se composent notamment de lacs et de collines. Depuis peu, il y a même une tour d’observation de six mètres de hauteur (20 pieds) située au sommet du Mont Bélanger, à plus de 960 mètres d’altitude.
+                <a href="https://www.montbelanger.qc.ca/" target="_blank"> Lien web</a>
+
+                <h3>Mont Adstock, Adstock</h3>
+                <p class="card-img--float"><img src="img/paw-modified.png"></p>
+                Surtout connu pour ses pistes de ski, le Mont Adstock abrite également neuf kilomètres de parcours, qui conduisent au sommet pour profiter d’une vue à 360 degrés sur la région. 
+                <a href="https://www.skiadstock.com/la-montagne/randonnee-pedestre/" target="_blank"> Lien web</a>
+
+                <h3>Parc régional du Massif du Sud, Saint-Philémon</h3>
+                <p class="card-img--float"><img src="img/paw-modified.png"></p>
+                Le parc régional du Massif du Sud offre un réseau totalisant 71 kilomètres de sentiers de randonnée à travers la forêt. Les différentes marches permettent de découvrir des points de vue remarquables, des rivières, des forêts anciennes, ou encore plusieurs races d’oiseaux. 
+                <a href="https://massifdusud.com/" target="_blank"> Lien web</a>
+
+                <h3>Les trois Monts de Coleraine, Saint-Joseph-de-Coleraine</h3>
+                D’abord, le sentier du Mont Oak, qui monte à 460 mètres d'altitude, propose un parcours éducatif sur la géologie en marchant à travers différents écosystèmes forestiers. 
+                La Colline Kerr (494m), abrite quant à elle un sentier de 2,7 kilomètres de niveau intermédiaire qui vous amènera jusqu’à son sommet. D’un côté, on peut notamment observer le mont Adstock ainsi que le cratère d'une mine des environs de Thetford Mines. De l’autre, on y voit de nombreux lacs de la région en plus d'une vue sur le village de Saint-Joseph-de-Coleraine et du Mont Mégantic.
+                Enfin, le Mont Caribou, culminant à 558 mètres d'altitude, offre une vue à 360 degrés sur la région. Un aller-retour de deux heures permet de profiter de cette vue. Pour les plus aguerris, il y a également une crête de près d’un kilomètre permettant de faire une boucle d’environ cinq heures de marche. 
+                <a href="https://www.3monts.ca/" target="_blank"> Lien web</a>
+
+                <h3>Parc des Appalaches, Près de Saint-Philémon</h3>
+                <p class="card-img--float"><img src="img/paw-modified.png"></p>
+                Un total de 140 kilomètres de sentiers sont accessibles dans le Parc des Appalaches. On y retrouve à la fois des parcours adaptés aux familles, mais aussi des sentiers plus abrupts menant au sommet des montagnes dont les monts Sugar Loaf et Grande Coulée avec des vues panoramiques. En marchant, on peut voir des eskers, des lacs ou également la rivière Noire Nord-Ouest par exemple. 
+                <a href="https://www.parcappalaches.com/" target="_blank"> Lien web</a>
+
+                <h3>Mont Ham, Saint-Joseph-de-Ham-Sud</h3>
+                <p class="card-img--float"><img src="img/paw-modified.png"></p>
+                Plus haute montagne de notre article, le Mont-Ham culmine à 713 mètres d’altitude. Un total de 18 kilomètres de randonnées permettent, à différentes échelles, de profiter de vue panoramique sur les régions qu’il domine. 
+                <a href="https://montham.ca/" target="_blank"> Lien web</a>
+
+                <h3>Mont Gosford, Saint-Augustin de Woburn</h3>
+                <p class="card-img--float"><img src="img/paw-modified.png"></p>
+                À la frontière canado-américaine, cette montagne propose plus de 40 kilomètres de sentiers de randonnée. Au sommet, une tour d’observation offre une vue à 360 degrés sur les montagnes frontalières ainsi que sur les montagnes des États du Maine et du New Hampshire.
+                <a href="https://montgosford.com/" target="_blank"> Lien web</a>
+            </p>
+        </div>
+
+        <div id="toutou" class="container first toutou">
+            <h1>Randonnées à faire avec son chien au Québec</h1>
+            <a class="toutou--paws"><img src="img/paws3-modified.png"></a>
+            <p>Ils offrent des points de vue magnifiques et les chiens y sont autant les bienvenus que les humains qui tiennent leur laisse: voici de beaux sentiers de randonnée où il est permis d’emmener pitou, un peu partout au Québec.</p>
+        
+            <div class="row g-6">
+                
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="img/Chien1.jpg" class="card-img-top" alt="Chien">
+                    <div class="card-body">
+                        <h5 class="card-title">Le parcours du Mont-Chocolat, Parc régional du massif du Sud, Chaudière-Appalaches</h5>
+                        <p class="card-text">Érablières, rivière, belvédère et sommet avec vues: voici ce qui vous attend sur ce sentier aux 380 m de dénivelé. Pour ceux qui connaissent déjà: une variante de retour « un peu plus ardue » a été ajoutée en 2021, indique le site du parc. À vous de décider!</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Longueur : 7,9 km (aller-retour)</li>
+                        <li class="list-group-item">Niveau : Intermédiaire</li>
+                        <li class="list-group-item">Tarif adulte : 8 $</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://massifdusud.com/activites/randonnee-pedestre/" target="_blank" class="card-link">Info : massifdusud.com</a>
+                    </div>
+                </div>
+
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="img/chien2.jpg" class="card-img-top" alt="Chien">
+                    <div class="card-body">
+                        <h5 class="card-title">Secteur des Trois-Fourches, sentier de la rivière du chêne, Leclercville</h5>
+                        <p class="card-text">Au coeur de la Forêt de la Seigneurie de Lotbinière renferme l'une des plus fortes concentrations de vieilles forêts des basses-terres du Saint-Laurent! Destiné aux adeptes de longues randonnées.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Longueur : 16 km (aller)</li>
+                        <li class="list-group-item">Niveau : Modéré à difficile</li>
+                        <li class="list-group-item">Tarif adulte : Gratuit</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://chaudiereappalaches.com/fr/voyage-quebec/lotbiniere/leclercville/sentier-de-la-riviere-du-chene-secteur-des-trois-fourches/randonnee-pedestre/" target="_blank" class="card-link">Info : secteurTroisFourches</a>
+                    </div>
+                </div>
+
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="img/chien3.jpg" class="card-img-top" alt="Chien">
+                    <div class="card-body">
+                        <h5 class="card-title">Secteur Saint-Daniel, Parc national de Frontenac, Adstock</h5>
+                        <p class="card-text">La Sépaq a décidé de mener ce projet pilote, sous certaines conditions, afin de mesurer l'impact de la présence des chiens sur l'expérience de visite et sur le milieu naturel. Aux termes de la réalisation du projet pilote, la Sépaq prendra une décision éclairée pour tous les parcs nationaux dans l’avenir !</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Longueur : 5 km, 3,2 km ou 16 km (aller-retour)</li>
+                        <li class="list-group-item">Niveau : Facile</li>
+                        <li class="list-group-item">Tarif adulte : 9,25 $</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://chaudiereappalaches.com/fr/voyage-quebec/region-de-thetford/adstock/parc-national-de-frontenac/parc/" target="_blank" class="card-link">Info : parc-national-de-frontenac</a>
+                    </div>
+                </div>
+
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="img/chien4.jpg" class="card-img-top" alt="Chien">
+                    <div class="card-body">
+                        <h5 class="card-title">La passerelle le canyon et la chute, Parc des chutes d'Armagh, Armagh</h5>
+                        <p class="card-text">Vous aurez l'occasion de découvrir des décors variés, tantôt le long de la rivière Armagh, tantôt en forêt. Bien sûr, vous pourrez emmener votre chien en laisse.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Longueur : 5 km (aller-retour)</li>
+                        <li class="list-group-item">Niveau : Facile</li>
+                        <li class="list-group-item">Tarif adulte : 8 $</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://chaudiereappalaches.com/fr/voyage-quebec/bellechasse/armagh/parc-des-chutes-d-armagh/parc/" target="_blank" class="card-link">Info : parc-chutes-d-armagh</a>
+                    </div>
+                </div>
+
+                <div class="extra">
+                    <p>Voici en extra : 21 parcs nationaux au Québec où tu peux amener ton chien cet été.</p>
+                    <button class="btn btn-primary" type="button"><a href="https://www.narcity.com/fr/parcs-nationaux-au-quebec-ou-les-chiens-sont-acceptes-a-lete-2020" target="_blank"> Lien web</a></button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer__logo">
+                <img src="img/icons/randologo1-modified.png">
+            </div>
+            <div class="footer__social">
+                <p>Fait par : Mme. Caroline Poulin</p>
+                <div class="footer__icons">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__icon" tabindex="0"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://fr.linkedin.com/" target="_blank" class="footer__icon" tabindex="0"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/" target="_blank" class="footer__icon" tabindex="0"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__icon" tabindex="0"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footer__contact">
+                    <a href="tel:+1234567890" class="footer__link" tabindex="0"><i class="fa-solid fa-phone"></i><span>123-456-7890</span></a>
+                    <a href="mailto:cegep@troisriviere.ca" class="footer__link" tabindex="0"><i class="fa-solid fa-envelope"></i><span>cegep@troisriviere.ca</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="bootstrap-5.1.3\dist\js\bootstrap.bundle.js"></script>
+</body>
+</html>

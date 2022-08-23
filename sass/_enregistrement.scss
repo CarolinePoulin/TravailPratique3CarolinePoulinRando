@@ -1,0 +1,63 @@
+@use 'variables';
+
+.enregistrer--main, .enregistrer  {
+    background-color: variables.$colorbleufonce;
+}
+
+.enregistrer--container {
+    background-color: variables.$colorgrispale;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.enregistrer--container h1 {
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.input-checkbox {
+    margin: 20px 70px;
+}
+
+form {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 70px;
+}
+
+.submit {
+    background: variables.$colorbleufonce;
+    margin-bottom: 30px;
+    color: variables.$colorblanc;
+}
+
+.input-control input {
+    border: 2px solid variables.$colorblanc;
+    border-radius: 4px;
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .errorMessage {
+    color: #ff3860;
+    font-size: 12px;
+    height: 15px;
+}

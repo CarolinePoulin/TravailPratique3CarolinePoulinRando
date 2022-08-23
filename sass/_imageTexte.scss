@@ -1,0 +1,33 @@
+@use 'variables';
+@use 'mixins';
+
+.imageTexte {
+    padding-top: 10px;
+    
+    .imageTexte__col {
+        background-color: variables.$colorbleufonce;
+        padding: 10px 30px;
+        margin: 0 -12px;
+    }
+    .imageTexte__col--img {
+        width: 110%;
+        margin: 0 -12px;
+    }
+}
+
+
+@include mixins.respond-to('lg') {
+    .imageTexte .row {
+        justify-content: center;
+    }
+    .imageTexte .imageTexte__col--img {
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+@include mixins.respond-to('xs') {
+    .imageTexte .imageTexte__col--img {
+        display: none;
+    }
+}

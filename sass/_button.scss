@@ -1,0 +1,15 @@
+@use 'variables';
+
+%button {
+    color: variables.$colorbleufonce;
+    background-color: variables.$colorgrispale;
+    border: 2px solid variables.$colorgrispale;
+    text-align: center;
+    &:hover, &:focus {
+        cursor: pointer;
+        background-color: variables.$colorgrisfonce;
+        color: variables.$colorblanc;
+    }
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+}

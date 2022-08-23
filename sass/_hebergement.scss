@@ -1,0 +1,44 @@
+@use 'variables';
+
+.hebergement--row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.hebergement--img img{
+    max-width: 100%;
+}
+
+.application--img img {
+    max-width: 100%;
+}
+
+.application--col {
+    padding: 10px;
+}
+
+.sacCouchage--background {
+    position: relative;
+    overflow: hidden;
+}
+
+.sacCouchage--div {
+    z-index: 2;
+    position: relative;
+}
+
+.sacCouchage--background:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.3;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
