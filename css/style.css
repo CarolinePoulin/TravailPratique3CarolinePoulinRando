@@ -21,7 +21,7 @@
 
 body {
   font-family: "Sansita", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.2rem !important;
 }
 
 h1 {
@@ -71,7 +71,7 @@ header {
 }
 
 a.nav-link {
-  color: #0d6dfc;
+  color: #0d6dfc !important;
 }
 
 .imageFond {
