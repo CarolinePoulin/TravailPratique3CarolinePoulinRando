@@ -32,10 +32,14 @@ Ce projet porte sur les aspects suivants de l'intégration web :
 
 ## Github du dépo :
 
-https://github.com/CarolinePoulin/TP3_PoulinCaroline
+https://github.com/CarolinePoulin/TravailPratique3CarolinePoulin.git
 
-## Pour cloner le projet
+## Pour cloner le projet :
 
 ```git
-git clone https://github.com/CarolinePoulin/TP3_PoulinCaroline
+git clone https://github.com/CarolinePoulin/TravailPratique3CarolinePoulin.git
 ```
+
+## Pages du projet :
+
+https://carolinepoulin.github.io/TravailPratique3CarolinePoulin/

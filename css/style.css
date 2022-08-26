@@ -123,6 +123,7 @@ a.nav-link {
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -281,6 +282,9 @@ h4 {
   margin-left: 50px;
   margin-bottom: 50px;
 }
+.toutou .titre {
+  display: inline-block;
+}
 
 div.row {
   --bs-gutter-x: 0.5rem;
@@ -297,6 +301,22 @@ div.row {
   color: #ffffff;
 }
 
+button.carousel-control-next, button.carousel-control-prev {
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .toutou .toutou--paws img {
+    width: 100px;
+    margin-left: 10px;
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 576px) {
+  .card-text {
+    display: none;
+  }
+}
 .hebergement--row {
   padding-top: 20px;
   padding-bottom: 20px;

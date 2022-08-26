@@ -1,4 +1,5 @@
 @use 'variables';
+@use 'mixins';
 
 .card-title {
     background-color: variables.$colorbleufonce;
@@ -64,6 +65,10 @@ h4 {
     margin-left: 50px;
     margin-bottom: 50px;
     }
+
+    .titre {
+        display: inline-block;
+    }
 }
 
 div.row {
@@ -80,5 +85,23 @@ div.row {
 
     a:hover {
         color: variables.$colorblanc;
+    }
+}
+
+button.carousel-control-next, button.carousel-control-prev {
+    opacity: 1;
+}
+
+@include mixins.respond-to('xl') {
+    .toutou .toutou--paws img {
+        width: 100px;
+        margin-left: 10px;
+        margin-bottom: 35px;
+    }
+}
+
+@include mixins.respond-to('xs') {
+    .card-text {
+        display: none;
     }
 }
