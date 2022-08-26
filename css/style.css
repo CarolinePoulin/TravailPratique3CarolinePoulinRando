@@ -249,7 +249,12 @@ p.card-img--float {
   width: 30px;
 }
 
+.card-img-overlay h2 {
+  display: inline-block;
+}
+
 h2 button.card-title.btn.btn-primary {
+  display: inline-block;
   font-size: 1.5rem;
   line-height: 1;
 }
