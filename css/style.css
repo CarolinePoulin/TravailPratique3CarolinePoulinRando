@@ -216,6 +216,10 @@ h5.card-title {
 .deshydrater .iframe {
   text-align: center;
 }
+.deshydrater iframe {
+  width: 560px;
+  height: 315px;
+}
 
 .card-title {
   background-color: #0d6dfc;
