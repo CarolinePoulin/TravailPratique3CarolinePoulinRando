@@ -22,7 +22,7 @@
         "type": "image/png",
         "purpose": "maskable"
     }],
-    "start_url": "/TRAVAILPRATIQUE3CAROLINEPOULIN/index.html",
+    "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#0d6efd"
