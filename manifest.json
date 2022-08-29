@@ -1,23 +1,23 @@
 {
-    "name": "TRAVAILPRATIQUE3CAROLINEPOULIN",
+    "name": "TravailPratique3CarolinePoulin",
     "short_name": "TP3",
     "icons": [{
-        "src": "/TRAVAILPRATIQUE3CAROLINEPOULIN/img/icons/randologo_x48.png",
+        "src": "/TravailPratique3CarolinePoulin//img/icons/randologo_x48.png",
         "sizes": "48x48",
         "type": "image/png",
         "purpose": "maskable"
     }, {
-        "src": "/TRAVAILPRATIQUE3CAROLINEPOULIN/img/icons/randologo_x144.png",
+        "src": "/TravailPratique3CarolinePoulin/img/icons/randologo_x144.png",
         "sizes": "144x144",
         "type": "image/png",
         "purpose": "any maskable"
     }, {
-        "src": "/TRAVAILPRATIQUE3CAROLINEPOULIN/img/icons/randologo_x192.png",
+        "src": "/TravailPratique3CarolinePoulin/img/icons/randologo_x192.png",
         "sizes": "192x192",
         "type": "image/png",
         "purpose": "maskable"
     }, {
-        "src": "/TRAVAILPRATIQUE3CAROLINEPOULIN/img/icons/randologo_x512.png",
+        "src": "/TravailPratique3CarolinePoulin/img/icons/randologo_x512.png",
         "sizes": "512x512",
         "type": "image/png",
         "purpose": "maskable"
