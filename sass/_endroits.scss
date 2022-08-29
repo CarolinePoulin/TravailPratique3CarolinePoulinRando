@@ -97,6 +97,14 @@ button.carousel-control-next, button.carousel-control-prev {
     opacity: 1;
 }
 
+.carousel-control-next-icon:hover, .carousel-control-prev-icon:hover {
+    background-color: variables.$colorbleufonce;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    border: 5px solid variables.$colorbleufonce;
+}
+
 @include mixins.respond-to('xl') {
     .toutou .toutou--paws img {
         width: 100px;
