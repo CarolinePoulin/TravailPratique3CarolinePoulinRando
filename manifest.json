@@ -10,7 +10,7 @@
         "src": "/TravailPratique3CarolinePoulin/img/icons/randologo_x144.png",
         "sizes": "144x144",
         "type": "image/png",
-        "purpose": "maskable"
+        "purpose": "any maskable"
     }, {
         "src": "/TravailPratique3CarolinePoulin/img/icons/randologo_x192.png",
         "sizes": "192x192",
