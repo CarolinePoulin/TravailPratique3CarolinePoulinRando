@@ -2,7 +2,7 @@
     "name": "TravailPratique3CarolinePoulin",
     "short_name": "TP3",
     "icons": [{
-        "src": "/TravailPratique3CarolinePoulin//img/icons/randologo_x48.png",
+        "src": "/TravailPratique3CarolinePoulin/img/icons/randologo_x48.png",
         "sizes": "48x48",
         "type": "image/png",
         "purpose": "maskable"
