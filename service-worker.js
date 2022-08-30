@@ -1,5 +1,5 @@
 // Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v5';
+const CACHE_NAME = 'static-cache-v6';
 
 const FILES_TO_CACHE = [
     'index.html',
@@ -59,7 +59,24 @@ const FILES_TO_CACHE = [
     'img/paws2.png',
     'img/paws3-modified.png',
     'img/paws3.png',
-    'img/pile9V.jpg'
+    'img/pile9V.jpg',
+    'img/RechaudCompact.jpg',
+    'img/refugeChalet.jpg',
+    'img/RondelleCombustible.jpg',
+    'img/SacADos.jpg',
+    'img/SeRechauffer.jpg',
+    'img/sommet.jpg',
+    'img/Symptome.jpg',
+    'img/tente.jpg',
+    'img/tente1.jpg',
+    'img/Tique.jpg',
+    'img/TiqueMoustique.jpg',
+    'img/TitanUCO.jpg',
+    'img/TraitementEau.jpg',
+    'img/Trousse1erSoins.jpg',
+    'img/Urgence.jpg',
+    'img/virtual-trekking-exercice.jpg',
+    'img/woman-endroit.jpg'
 ];
 
 self.addEventListener('install', (evt) => {
