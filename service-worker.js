@@ -15,7 +15,7 @@ self.addEventListener('install', (evt) => {
     console.log('[ServiceWorker]Install');
     evt.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
-            console.log('[ServiceWorker]Pre-caching offline page');
+            console.log('[ServiceWorker]Pre-caching all pages');
             return cache.addAll(FILES_TO_CACHE);
         })
     );
