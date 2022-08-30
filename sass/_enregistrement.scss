@@ -1,4 +1,5 @@
 @use 'variables';
+@use 'mixins';
 
 .enregistrer--main, .enregistrer  {
     background-color: variables.$colorbleufonce;
@@ -60,4 +61,15 @@ form {
     color: #ff3860;
     font-size: 12px;
     height: 15px;
+}
+
+@include mixins.respond-to('xs') {
+    .enregistrer--container h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    form {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
