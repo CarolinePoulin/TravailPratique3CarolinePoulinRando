@@ -24,6 +24,8 @@ function installPWA(evt) {
     });
 }
 
+window.addEventListener('appinstalled', logAppInstalled);
+
 function logAppInstalled(evt) {
-    console.log("L'usager a installé la PWA via les ... de Chrome.")
+    console.log("L'usager a installé la PWA via les ... de Chrome.", evt);
 }
