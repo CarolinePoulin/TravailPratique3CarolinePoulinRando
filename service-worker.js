@@ -48,7 +48,18 @@ const FILES_TO_CACHE = [
     'img/hikster-1.jpg',
     'img/HiverForet.jpg',
     'img/MousseSecheuse.jpg',
-    'img/MultiCouche.jpg'
+    'img/MultiCouche.jpg',
+    'img/ondago1.png',
+    'img/Paratinder.jpg',
+    'img/paw-modified.png',
+    'img/paw.png',
+    'img/paws-modified.png',
+    'img/paws.png',
+    'img/paws2-modified.png',
+    'img/paws2.png',
+    'img/paws3-modified.png',
+    'img/paws3.png',
+    'img/pile9V.jpg'
 ];
 
 self.addEventListener('install', (evt) => {
