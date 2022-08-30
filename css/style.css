@@ -3,11 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
 .btn {
   color: #0d6dfc;
-  background-color: #cdcdcd;
-  border: 2px solid #cdcdcd;
+  background-color: #efefef;
+  border: 2px solid #efefef;
   text-align: center;
   padding: 0.375rem 0.75rem;
   border-radius: 0.25rem;
+  box-shadow: 1px 1px 3px lightblue;
 }
 .btn:hover, .btn:focus {
   cursor: pointer;
@@ -44,6 +45,10 @@ h2, h3, h4, h5, h6 {
 
 .first {
   padding-top: 100px;
+}
+
+.white {
+  color: white;
 }
 
 .screen-reader-text {
@@ -104,6 +109,9 @@ a.nav-link, button.nav-link {
 .imageTexte .imageTexte__col--img {
   width: 110%;
   margin: 0 -12px;
+}
+.imageTexte h1, .imageTexte p {
+  color: white;
 }
 
 @media (max-width: 992px) {
@@ -178,11 +186,12 @@ a.nav-link, button.nav-link {
 
 .btn {
   color: #0d6dfc;
-  background-color: #cdcdcd;
-  border: 2px solid #cdcdcd;
+  background-color: #efefef;
+  border: 2px solid #efefef;
   text-align: center;
   padding: 0.375rem 0.75rem;
   border-radius: 0.25rem;
+  box-shadow: 1px 1px 3px lightblue;
 }
 .btn:hover, .btn:focus {
   cursor: pointer;
