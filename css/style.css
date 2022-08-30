@@ -72,6 +72,8 @@ header {
 
 a.nav-link, button.nav-link {
   color: #0d6dfc !important;
+  border: none;
+  background-color: #cdcdcd;
 }
 
 .imageFond {

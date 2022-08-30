@@ -11,4 +11,6 @@ header {
 }
 a.nav-link, button.nav-link {
     color: variables.$colorbleufonce !important;
+    border: none;
+    background-color: #cdcdcd;
 }
