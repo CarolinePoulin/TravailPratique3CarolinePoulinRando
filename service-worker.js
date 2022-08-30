@@ -26,7 +26,17 @@ const FILES_TO_CACHE = [
     'img/endroits/SentierMineurs.jpg',
     'img/endroits/SentierMontBelanger.jpg',
     'img/endroits/SentierMontBelanger2.jpg',
-    'img/endroits/TroisMontColeraine2.jpg'
+    'img/endroits/TroisMontColeraine2.jpg',
+    'img/AjusterSacADos.jpg',
+    'img/alltrails(1).jpg',
+    'img/AllumerFeu.jpg',
+    'img/applications.jpg',
+    'img/applications0.jpg',
+    'img/background.jpg',
+    'img/backpack.jpg',
+    'img/baliseqc.jpg',
+    'img/Cairn.jpg',
+    'img/camping-tent.jpg'
 ];
 
 self.addEventListener('install', (evt) => {
