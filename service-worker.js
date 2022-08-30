@@ -36,7 +36,19 @@ const FILES_TO_CACHE = [
     'img/backpack.jpg',
     'img/baliseqc.jpg',
     'img/Cairn.jpg',
-    'img/camping-tent.jpg'
+    'img/camping-tent.jpg',
+    'img/Chien1.jpg',
+    'img/chien2.jpg',
+    'img/chien3.jpg',
+    'img/chien4.jpg',
+    'img/EmprunteEcologique.jpg',
+    'img/encas.jpg',
+    'img/hamac.jpg',
+    'img/hiking-dog.jpg',
+    'img/hikster-1.jpg',
+    'img/HiverForet.jpg',
+    'img/MousseSecheuse.jpg',
+    'img/MultiCouche.jpg'
 ];
 
 self.addEventListener('install', (evt) => {
