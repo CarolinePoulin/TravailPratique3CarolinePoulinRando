@@ -9,6 +9,6 @@ header {
 .navbar--div {
     background-color: variables.$colorgrispale;
 }
-a.nav-link {
+a.nav-link, button.nav-link {
     color: variables.$colorbleufonce !important;
 }
